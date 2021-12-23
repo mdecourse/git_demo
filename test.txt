@@ -1,17 +1,18 @@
-About
-
-這裡是國立虎尾科技大學 - 機械設計工程系 - 電腦輔助設計實習課程網站.
-
-KMOLab 上課的目的: 鼓勵每一位同學都能及早確定努力的目標, 證明自己具備獨立研究與解題能力.
-
-本課程的主要倉儲位於: https://github.com/mdecourse/cad2021
-
-與課程相關的訊息, 指定作業與問答區位於: https://github.com/mdecourse/cad2021/discussions
-
-電腦輔助設計實習 Zulip:
-
-https://kmolab.zulipchat.com
-
-電腦輔助設計實習 Zulip 討論區
-
-gitter: https://gitter.im/mdecourse/cad2021 (線上課程時段訊息發布區)
+Y:\tmp\w14_demo>echo off
+[main c0bffaa] 再加上一個超過 100mb  2k7
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bigger.7z
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 121.87 MiB | 13.81 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: error: Trace: aaa86b27fef4da2d95b9308404448ceeb832227dc5dc6e286e0a65506b8a720e
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File bigger.7z is 121.83 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To https://github.com/mdecourse/w14_demo.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/mdecourse/w14_demo.git'
