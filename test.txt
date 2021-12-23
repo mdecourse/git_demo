@@ -16,3 +16,240 @@ remote: error: GH001: Large files detected. You may want to try Git Large File S
 To https://github.com/mdecourse/w14_demo.git
  ! [remote rejected] main -> main (pre-receive hook declined)
 error: failed to push some refs to 'https://github.com/mdecourse/w14_demo.git'
+
+
+Jump to Main Content
+Jump to Primary Navigation
+
+    insight
+    work
+    careers
+
+    contact us
+
+Sidebar
+Clock insights
+KnowledgeHow toNews
+Deleting a git commit
+Deleting a git commit
+Access - a membership platform for Broadsheet Media
+Access - a membership platform for Broadsheet Media
+Clock honoured in Clutch's Top 1%
+Clock honoured in Clutch's Top 1%
+News Corp Australia makes this Christmas their most Rewarding yet!
+News Corp Australia makes this Christmas their most Rewarding yet!
+Hot off the press! Clock and News UK relaunch Deliver My Newspaper
+Hot off the press! Clock and News UK relaunch Deliver My Newspaper
+A new digital HOLM for Gloucester Rugby
+A new digital HOLM for Gloucester Rugby
+A News Literacy campaign site for The Wall Street Journal
+A News Literacy campaign site for The Wall Street Journal
+Clock help launch SOLÈNE.art, a virtual art gallery with social imp...
+Clock help launch SOLÈNE.art, a virtual art gallery with social imp...
+Clock launches two new sites for film industry mainstay, the BBFC.
+Clock launches two new sites for film industry mainstay, the BBFC.
+Leicester Tigers unveil new 2020/21 look and create a roar across d...
+Leicester Tigers unveil new 2020/21 look and create a roar across d...
+Accelerated Digital Transformation. The Norm?
+Accelerated Digital Transformation. The Norm?
+Game and Save Lives
+Game and Save Lives
+Back to the office after Covid-19
+Back to the office after Covid-19
+How to educate your children at home with The Week Junior Schools
+How to educate your children at home with The Week Junior Schools
+Delivering news to a nation in lockdown
+Delivering news to a nation in lockdown
+Introducing WSJ Voices - putting loyalty into words
+Introducing WSJ Voices - putting loyalty into words
+Next.js; what is it and why do we use it?
+Next.js; what is it and why do we use it?
+Up your Project Management game for 2020
+Up your Project Management game for 2020
+Clock recognised as Clutch leader in the Top 20 UK Developers!
+Clock recognised as Clutch leader in the Top 20 UK Developers!
+10 years of Pure Full Stack JavaScript
+10 years of Pure Full Stack JavaScript
+Balls, Brand, and Balance: A Q&A with Helen Roe, Head of Ma...
+Balls, Brand, and Balance: A Q&A with Helen Roe, Head of Ma...
+Our Chief Technology Officer, Paul Serby, discusses the latest tech
+Our Chief Technology Officer, Paul Serby, discusses the latest tech
+Managing a digital agency, specialising in bespoke web developement.
+Managing a digital agency, specialising in bespoke web developement.
+Creating valuable digital experiences… it’s about time!
+Creating valuable digital experiences… it’s about time!
+What is React and what are the benefits?
+What is React and what are the benefits?
+Our latest launch: Deliver My Times
+Our latest launch: Deliver My Times
+What the heck is a headless CMS and why would you need one?
+What the heck is a headless CMS and why would you need one?
+It’s about time … companies support employees most in need
+It’s about time … companies support employees most in need
+Colooder launches in-app purchasing for Gloucester Rugby Merch
+Colooder launches in-app purchasing for Gloucester Rugby Merch
+Clock is Top for Placements!
+Clock is Top for Placements!
+Youth Can Do It! - Clock and The Prince's Trust
+Youth Can Do It! - Clock and The Prince's Trust
+Key of the Fort...Clock is 21!
+Key of the Fort...Clock is 21!
+Guess the Score with Northampton Saints’ new game!
+Guess the Score with Northampton Saints’ new game!
+Digi-Cluster October 2018
+Digi-Cluster October 2018
+Beta launch of Colooder's new fan experience app for Gloucester Rugby
+Beta launch of Colooder's new fan experience app for Gloucester Rugby
+How to engage sports fans whilst they are watching live sport
+How to engage sports fans whilst they are watching live sport
+Backing our staff and their ideas
+Backing our staff and their ideas
+This girl can… code
+This girl can… code
+How mobile sites are affected by the Google Speed update
+How mobile sites are affected by the Google Speed update
+Mission: Smiley Happy People
+Mission: Smiley Happy People
+Sun Savers Raffle Launch
+Sun Savers Raffle Launch
+Awards nominations for Clock and Leicester Tigers
+Awards nominations for Clock and Leicester Tigers
+Clock’s Kado platform is used by Dennis to relaunch flagship title ...
+Clock’s Kado platform is used by Dennis to relaunch flagship title ...
+Top 5 Remote Working Tips
+Top 5 Remote Working Tips
+Clock's predictions for 2018
+Clock's predictions for 2018
+The Fastest Website in Rugby
+The Fastest Website in Rugby
+Black Ballad website shortlisted for Website Of The Year
+Black Ballad website shortlisted for Website Of The Year
+Clock launch brand new Leicester Tigers App
+Clock launch brand new Leicester Tigers App
+The Culture at Clock
+The Culture at Clock
+Clock launch brand new website for Leicester Tigers
+Clock launch brand new website for Leicester Tigers
+Designing and building an agency site
+Designing and building an agency site
+The Importance of a Flexible Design Methodology
+The Importance of a Flexible Design Methodology
+Self Serve Hub for Newspaper Retailers
+Self Serve Hub for Newspaper Retailers
+Clock Launch a What's On App
+Clock Launch a What's On App
+Clock launch brand new native App for Metro
+Clock launch brand new native App for Metro
+So what is League of Legends exactly?
+So what is League of Legends exactly?
+How to stop your customers' data being stolen
+How to stop your customers' data being stolen
+The PPA Festival 2016
+The PPA Festival 2016
+How to build, test, share and publish a Hybrid mobile app
+How to build, test, share and publish a Hybrid mobile app
+Increase dwell time… PAH!
+Increase dwell time… PAH!
+A Simple Website in Node.js – 2016 Edition
+A Simple Website in Node.js – 2016 Edition
+JavaScript Frameworks in 2016
+JavaScript Frameworks in 2016
+Moving from Mac to Linux
+Moving from Mac to Linux
+A Simple Website in Node.js with Express, Jade and Stylus
+A Simple Website in Node.js with Express, Jade and Stylus
+Deleting a git commit
+How to
+
+When working with Git you will find that sometimes commits need to be…
+
+When working with Git you will find that sometimes commits need to be removed as they have introduced a bug or need to be reworked.
+
+If it is the last commit this is very straight forward. Simply run:
+
+git reset HEAD^
+
+This will pop off the latest commit but leave all of your changes to the files intact.
+
+If you need to delete more than just the last commit there are two methods you can use. The first is using rebase this will allow you to remove one or more consecutive commits the other is cherry-pick which allows you to remove non consecutive commits.
+Example git log
+Number 	Hash 	Commit Message 	Author
+1 	2c6a45b 	(HEAD) Adding public method to access protected method 	Tom
+2 	ae45fab 	Updates to database interface 	Contractor 1
+3 	77b9b82 	Improving database interface 	Contractor 2
+4 	3c9093c 	Merged develop branch into master 	Tom
+5 	b3d92c5 	Adding new Event CMS Module 	Paul
+6 	7feddbb 	Adding CMS class and files 	Tom
+7 	a809379 	Adding project to Git 	Tom
+Using Rebase
+
+Using the git log above we want to remove the following commits; 2 & 3 (ae45fab & 77b9b82). As they are consecutive commits we can use rebase.
+
+git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>
+
+e.g to remove commits 2 & 3 above
+
+git rebase --onto repair~3 repair~1 repair
+Using Cherry Pick
+
+Step 1: Find the commit before the commit you want to remove git log
+
+Step 2: Checkout that commit git checkout <commit hash>
+
+Step 3: Make a new branch using your current checkout commit git checkout -b <new branch>
+
+Step 4: Now you need to add the commit after the removed commit git cherry-pick <commit hash>
+
+Step 5: Now repeat Step 4 for all other commits you want to keep.
+
+Step 6: Once all commits have been added to your new branch and have been commited. Check that everything is in the correct state and working as intended. Double check everything has been commited: git status
+
+Step 7: Switch to your broken branch git checkout <broken branch>
+
+Step 8: Now perform a hard reset on the broken branch to the commit prior to the one your want to remove git reset --hard <commit hash>
+
+Step 9: Merge your fixed branch into this branch git merge <branch name>
+
+Step 10: Push the merged changes back to origin. WARNING: This will overwrite the remote repo! git push --force origin <branch name>
+
+You can do the process without creating a new branch by replacing Step 2 & 3 with Step 8 then not carry out Step 7 & 9.
+Example
+
+Say we want to remove commits 2 & 4 from the repo.
+
+    git checkout b3d92c5 Checkout the last usable commit.
+    git checkout -b repair Create a new branch to work on.
+    git cherry-pick 77b9b82 Run through commit 3.
+    git cherry-pick 2c6a45b Run through commit 1.
+    git checkout master Checkout master.
+    git reset --hard b3d92c5 Reset master to last usable commit.
+    git merge repair Merge our new branch onto master.
+    git push --hard origin master Push master to the remote repo.
+
+Final note
+
+Git rebase & cherrypick are dangerous but powerful solutions that should only be used as a last option and only be undertaken by someone who knows what they are doing.  Beware that both solutions could have adverse effects on other users who are working on the same repository / branch.
+
+Finally remember to be careful and good luck!
+Access - a membership platform for Broadsheet Media
+News
+
+Our work in Australia continues, with the launch of the exciting new membership program - Broadsheet Access - for city guide powerhouse, Broadsheet Media.
+
+Broadsheet required a trusted partner to design and build the digital home for everything relating to its new Access membership. 
+
+Bringing users the very best of their city through breaking news, features, event guides and insight from industry experts, Broadsheet is the leading authority on cultural life in major cities throughout Australia. 
+
+Their aim is not simply to tell their users about a restaurant opening, they will spend time in the kitchen, chatting with chefs over the clatter of pans, and to the designers while admiring their drawings. By telling their audience who’s making places so great and why, and where they can find them, they add insight into what makes a city truly tick.
+
+With the new subscription program from $6.50 per month, Access members can get first dibs on event tickets and table reservations at the hottest restaurants. They can enjoy unique experiences alongside exclusive discounts and offers from a selection of handpicked brands.
+pic
+
+After Clock was approached to help build and deliver the new membership platform and with an ambition to launch to market ASAP, we adopted a rapid approach to development, prioritising the deliverables and setting to work straight away. Using our FrontEnd expertise to finely craft and interpret the high-level designs, we created a beautifully presented fully responsive digital platform that offers a simple yet seamless user experience. Members can redeem rewards with our in-built redemption mechanics as well as navigate from the main Broadsheet platform with ease, via integrated SSO. Furthermore, with the city-picker, a user can see content that is most relevant to their chosen location.
+
+Harnessing the feature set of Clock’s CMS components and with a simple set of Phase 1 requirements, we were able to create a working solution within weeks. 
+
+2022 will see the platform continue to evolve, with an exciting roadmap of new features and functionality that will enhance the user experience and allow the site to become even more reflective of the Broadsheet brand and all it has to offer. 
+pic2
+
+Have a browse of the site in action.
