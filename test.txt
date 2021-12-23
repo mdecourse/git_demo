@@ -1,0 +1,17 @@
+About
+
+這裡是國立虎尾科技大學 - 機械設計工程系 - 電腦輔助設計實習課程網站.
+
+KMOLab 上課的目的: 鼓勵每一位同學都能及早確定努力的目標, 證明自己具備獨立研究與解題能力.
+
+本課程的主要倉儲位於: https://github.com/mdecourse/cad2021
+
+與課程相關的訊息, 指定作業與問答區位於: https://github.com/mdecourse/cad2021/discussions
+
+電腦輔助設計實習 Zulip:
+
+https://kmolab.zulipchat.com
+
+電腦輔助設計實習 Zulip 討論區
+
+gitter: https://gitter.im/mdecourse/cad2021 (線上課程時段訊息發布區)
